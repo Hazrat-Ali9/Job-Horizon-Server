@@ -64,7 +64,7 @@ async function run() {
         const appliedJobsCollection = db.collection('appliedJobs')
 
 
-        //creating JWT Token
+        //Creating JWT Token
         app.post("/jwt", async (req, res) => {
             const user = req.body;
             // console.log("user for token", user);
