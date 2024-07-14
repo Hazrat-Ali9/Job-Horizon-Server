@@ -73,7 +73,7 @@ async function run() {
             res.cookie("token", token, cookieOptions).send({ success: true });
         });
 
-        //clearing JWT Token
+        //Clearing JWT Token
         app.post("/logout", async (req, res) => {
             const user = req.body;
             // console.log("logging out", user);
